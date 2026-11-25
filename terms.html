@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
   <title>Условия использования · Z-Aura</title>
   <meta name="description" content="Условия использования Windows-приложения Z-Aura.">
   <link rel="stylesheet" href="styles.css">
@@ -17,12 +17,15 @@
       <a href="index.html">О приложении</a>
       <a href="terms.html">Условия использования</a>
       <a href="privacy.html">Конфиденциальность</a>
+      <a href="https://t.me/zaurafork" rel="noreferrer">Telegram-канал</a>
+      <a href="terms.en.html" lang="en" data-language-link>ENG</a>
     </nav>
+    <label class="preferences">Тема сайта <select data-theme-switch aria-label="Тема сайта"><option value="light">Светлая тема</option><option value="dark">Тёмная тема</option></select></label>
   </div></header>
   <main id="content" class="wrap">
-    
+    <aside class="draft" role="note"><strong>Черновик для локального просмотра.</strong> Окончательная редакция ещё не утверждена, доступность публичных страниц не подтверждена. Не публикуйте эту версию и не вставляйте её адреса в Developer Portal.</aside>
     <h1>Условия использования Z-Aura</h1>
-<p class="meta">Редакция от 22.11.2026 · ответственный: Август / @dopebeanie (wannadie2day)</p>
+<p class="meta">Редакция от 25.11.2026 · ответственный: Август / @dopebeanie (wannadie2day)</p>
 <h2>1. Область применения</h2>
 <p>Эти условия описывают использование рабочего Windows-приложения Z-Aura и этого информационного сайта. Контакт ответственного указан внизу страницы. Обработка данных описана в <a href="privacy.html">политике конфиденциальности</a>.</p>
 <h2>2. Назначение и законное использование</h2>
@@ -46,9 +49,10 @@
 
   </main>
   <footer id="contact" class="wrap">
-    <p>Ответственный за приложение и этот сайт: Август / @dopebeanie (wannadie2day).<br>
-      Связь по вопросам приложения и данных: <a href="mailto:z-aura@internet.ru">z-aura@internet.ru</a>.</p>
+    <p>Ответственный за приложение и этот сайт: Август / @dopebeanie (wannadie2day).<br>Связь по вопросам приложения и данных: <a href="mailto:z-aura@internet.ru">z-aura@internet.ru</a>.</p>
     <p>Z-Aura — независимый проект. Не является продуктом Discord и не одобрен Discord самим фактом размещения этих документов.</p>
+    <p>Новости и changelog: <a href="https://t.me/zaurafork" rel="noreferrer">Telegram · @zaurafork</a>. Для непубличных обращений по данным используйте контакт ответственного выше, а не публичный канал.</p>
   </footer>
+  <script src="preferences.js"></script>
 </body>
 </html>
