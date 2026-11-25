@@ -4,51 +4,97 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
   <title>Условия использования · Z-Aura</title>
   <meta name="description" content="Условия использования Windows-приложения Z-Aura.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
 </head>
 <body>
   <a class="skip" href="#content">Перейти к содержимому</a>
-  <header><div class="wrap">
-    <a class="brand" href="index.html">Z-Aura</a>
-    <nav aria-label="Документы приложения">
-      <a href="index.html">О приложении</a>
-      <a href="terms.html">Условия использования</a>
-      <a href="privacy.html">Конфиденциальность</a>
-      <a href="https://t.me/zaurafork" rel="noreferrer">Telegram-канал</a>
-      <a href="terms.en.html" lang="en" data-language-link>ENG</a>
-    </nav>
-    <label class="preferences">Тема сайта <select data-theme-switch aria-label="Тема сайта"><option value="light">Светлая тема</option><option value="dark">Тёмная тема</option></select></label>
-  </div></header>
-  <main id="content" class="wrap">
-    <aside class="draft" role="note"><strong>Черновик для локального просмотра.</strong> Окончательная редакция ещё не утверждена, доступность публичных страниц не подтверждена. Не публикуйте эту версию и не вставляйте её адреса в Developer Portal.</aside>
-    <h1>Условия использования Z-Aura</h1>
+  <header class="site-header wrap">
+    <div class="header-top">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="" width="44" height="44">
+        <span>Z-Aura<small>Документы приложения</small></span>
+      </a>
+      <div class="preferences">
+        <nav class="language-picker" aria-label="Язык сайта">
+          <a href="terms.html" lang="ru" data-language-link aria-current="page">RU</a>
+          <a href="terms.en.html" lang="en" data-language-link >ENG</a>
+        </nav>
+        <div class="theme-picker" data-theme-picker role="radiogroup" aria-label="Тема сайта">
+          <button type="button" role="radio" data-theme-choice="light" aria-checked="true" aria-label="Светлая тема" tabindex="0" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          </button>
+          <button type="button" role="radio" data-theme-choice="dark" aria-checked="false" aria-label="Тёмная тема" tabindex="-1" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <nav class="document-tabs" aria-label="Документы приложения">
+        <a href="index.html" >О приложении</a>
+        <a href="terms.html" aria-current="page">Условия использования</a>
+        <a href="privacy.html" >Конфиденциальность</a>
+      </nav>
+      <a class="channel-link" href="https://t.me/zaurafork" rel="noreferrer">Telegram-канал<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </div>
+  </header>
+  <main id="content" class="wrap document-layout" tabindex="-1">
+    <article class="document">
+      <div class="document-kicker"><span class="kicker-dot" aria-hidden="true"></span>Документы Z-Aura<span class="revision">Редакция 25.11.2026</span></div>
+      
+      <h1>Условия использования Z-Aura</h1>
 <p class="meta">Редакция от 25.11.2026 · ответственный: Август / @dopebeanie (wannadie2day)</p>
-<h2>1. Область применения</h2>
+<h2 id="section-1">1. Область применения</h2>
 <p>Эти условия описывают использование рабочего Windows-приложения Z-Aura и этого информационного сайта. Контакт ответственного указан внизу страницы. Обработка данных описана в <a href="privacy.html">политике конфиденциальности</a>.</p>
-<h2>2. Назначение и законное использование</h2>
+<h2 id="section-2">2. Назначение и законное использование</h2>
 <p>Z-Aura управляет локальными профилями, списками и файлами для zapret/Flowseal и позволяет запускать движок или устанавливать службу Windows. Пользователь отвечает за соблюдение применимого законодательства, условий интернет-провайдера, правил сети и прав третьих лиц. Не используйте приложение для несанкционированного доступа, причинения вреда или вмешательства в чужую сеть.</p>
 <p>Приложение не является VPN, не добавляет шифрование и не гарантирует анонимность, обход любого ограничения или непрерывный доступ к сторонним сервисам.</p>
-<h2>3. Лицензии</h2>
+<h2 id="section-3">3. Лицензии</h2>
 <p>Оригинальный код интерфейса и интеграции Z-Aura распространяется по лицензии MIT. Условия MIT, включая разрешения на использование, изменение и распространение, сохраняют силу; эти условия не сужают права, предоставленные лицензией.</p>
 <p>zapret, Flowseal, WinDivert, Cygwin, .NET/WPF, шрифты и другие сторонние компоненты сохраняют собственные лицензии. Лицензия MIT на код Z-Aura не распространяется автоматически на них. При распространении составной сборки необходимо соблюдать применимые лицензии, уведомления и требования о предоставлении исходного кода. Публикация этих условий не подтверждает выполнение этих требований.</p>
-<h2>4. Изменения системы и безопасность</h2>
+<h2 id="section-4">4. Изменения системы и безопасность</h2>
 <p>Запуск движка и настройка службы могут требовать прав администратора и изменять обработку сетевого трафика. Пользователь выбирает профили и отвечает за применяемые параметры. Перед изменениями сохраните нужные данные. Не отключайте антивирус, Secure Boot или проверку подписи драйверов ради запуска приложения.</p>
 <p>Собственный GUI-движок и установленная служба имеют разные жизненные циклы: закрытие GUI не обязательно останавливает службу. Перед удалением файлов остановите соответствующие процессы и службу штатными средствами.</p>
-<h2>5. Discord и сторонние сервисы</h2>
+<h2 id="section-5">5. Discord и сторонние сервисы</h2>
 <p>В текущей версии Rich Presence активна, пока работает Z-Aura, без отдельного переключателя в приложении. Выбранный профиль, состояние собственного движка и время сеанса могут отображаться другим пользователям Discord. Видимость активности регулируется настройками Discord. Если не хотите передавать Presence запущенному Discord, завершите Z-Aura либо desktop-клиент Discord.</p>
 <p>Использование Discord и переходы по внешним ссылкам регулируются условиями соответствующих сервисов. Z-Aura не является продуктом Discord, не утверждает наличие верификации и не гарантирует доступность функций Discord.</p>
-<h2>6. Отсутствие гарантий и ответственность</h2>
+<h2 id="section-6">6. Отсутствие гарантий и ответственность</h2>
 <p>В пределах, допускаемых применимым законодательством, приложение предоставляется «как есть», без гарантий пригодности для конкретной цели, бесперебойности и отсутствия ошибок. Применяются ограничения ответственности из соответствующих лицензий. Ничто в этих условиях не исключает обязательные права пользователя или ответственность, которую закон не позволяет ограничить.</p>
-<h2>7. Прекращение использования</h2>
+<h2 id="section-7">7. Прекращение использования</h2>
 <p>Вы можете прекратить использование приложения, завершить его процессы, остановить и удалить установленную службу, а затем удалить локальные файлы. Порядок хранения и удаления данных указан в политике конфиденциальности.</p>
-<h2>8. Изменения и обращения</h2>
+<h2 id="section-8">8. Изменения и обращения</h2>
 <p>При изменениях функций документы должны обновляться с указанием новой даты. Эта редакция описывает текущую реализацию, а не обещание будущего сервиса. По вопросам условий, лицензий и приложения используйте контакт внизу страницы.</p>
 
+    </article>
+    <aside class="document-side">
+      <div class="contents-card">
+        <details class="contents" data-document-contents>
+          <summary>На этой странице<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <nav aria-label="На этой странице"><a href="#section-1">1. Область применения</a>
+<a href="#section-2">2. Назначение и законное использование</a>
+<a href="#section-3">3. Лицензии</a>
+<a href="#section-4">4. Изменения системы и безопасность</a>
+<a href="#section-5">5. Discord и сторонние сервисы</a>
+<a href="#section-6">6. Отсутствие гарантий и ответственность</a>
+<a href="#section-7">7. Прекращение использования</a>
+<a href="#section-8">8. Изменения и обращения</a></nav>
+        </details>
+      </div>
+      <div class="contact-card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 6 9 7 9-7"/></svg>
+        <h2>Есть вопросы?</h2>
+        <p>По вопросам приложения, условий и ваших данных — напишите ответственному.</p>
+        <a href="mailto:z-aura@internet.ru">z-aura@internet.ru</a>
+      </div>
+    </aside>
   </main>
-  <footer id="contact" class="wrap">
+  <footer id="contact" class="wrap site-footer">
+    <div class="footer-heading"><span>Z-Aura</span><span>Ваш поток. Ваши правила.</span></div>
     <p>Ответственный за приложение и этот сайт: Август / @dopebeanie (wannadie2day).<br>Связь по вопросам приложения и данных: <a href="mailto:z-aura@internet.ru">z-aura@internet.ru</a>.</p>
     <p>Z-Aura — независимый проект. Не является продуктом Discord и не одобрен Discord самим фактом размещения этих документов.</p>
     <p>Новости и changelog: <a href="https://t.me/zaurafork" rel="noreferrer">Telegram · @zaurafork</a>. Для непубличных обращений по данным используйте контакт ответственного выше, а не публичный канал.</p>

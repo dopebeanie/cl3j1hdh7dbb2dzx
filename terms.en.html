@@ -4,51 +4,97 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
   <title>Terms of use · Z-Aura</title>
   <meta name="description" content="Z-Aura Windows application documents, privacy and optional Discord integration.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
-  <header><div class="wrap">
-    <a class="brand" href="index.html">Z-Aura</a>
-    <nav aria-label="App documents">
-      <a href="index.en.html">About</a>
-      <a href="terms.en.html">Terms of use</a>
-      <a href="privacy.en.html">Privacy</a>
-      <a href="https://t.me/zaurafork" rel="noreferrer">Telegram channel</a>
-      <a href="terms.html" lang="ru" data-language-link>RU</a>
-    </nav>
-    <label class="preferences">Site theme <select data-theme-switch aria-label="Site theme"><option value="light">Light theme</option><option value="dark">Dark theme</option></select></label>
-  </div></header>
-  <main id="content" class="wrap">
-    <aside class="draft" role="note"><strong>Local preview draft.</strong> Not yet approved or publicly verified. Do not publish or paste its URLs into Developer Portal.</aside>
-    <h1>Z-Aura terms of use</h1>
+  <header class="site-header wrap">
+    <div class="header-top">
+      <a class="brand" href="index.en.html">
+        <img src="logo.png" alt="" width="44" height="44">
+        <span>Z-Aura<small>App documents</small></span>
+      </a>
+      <div class="preferences">
+        <nav class="language-picker" aria-label="Site language">
+          <a href="terms.html" lang="ru" data-language-link >RU</a>
+          <a href="terms.en.html" lang="en" data-language-link aria-current="page">ENG</a>
+        </nav>
+        <div class="theme-picker" data-theme-picker role="radiogroup" aria-label="Site theme">
+          <button type="button" role="radio" data-theme-choice="light" aria-checked="true" aria-label="Light theme" tabindex="0" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          </button>
+          <button type="button" role="radio" data-theme-choice="dark" aria-checked="false" aria-label="Dark theme" tabindex="-1" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <nav class="document-tabs" aria-label="App documents">
+        <a href="index.en.html" >About</a>
+        <a href="terms.en.html" aria-current="page">Terms of use</a>
+        <a href="privacy.en.html" >Privacy</a>
+      </nav>
+      <a class="channel-link" href="https://t.me/zaurafork" rel="noreferrer">Telegram channel<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </div>
+  </header>
+  <main id="content" class="wrap document-layout" tabindex="-1">
+    <article class="document">
+      <div class="document-kicker"><span class="kicker-dot" aria-hidden="true"></span>Z-Aura documents<span class="revision">Revision 25.11.2026</span></div>
+      
+      <h1>Z-Aura terms of use</h1>
 <p class="meta">Revision 25.11.2026 · responsible party: Avgust / @dopebeanie (wannadie2day)</p>
-<h2>1. Scope</h2>
+<h2 id="section-1">1. Scope</h2>
 <p>These terms cover the Windows application Z-Aura and this information site. Contact details are below. Data processing is described in the <a href="privacy.en.html">privacy policy</a>.</p>
-<h2>2. Purpose and lawful use</h2>
+<h2 id="section-2">2. Purpose and lawful use</h2>
 <p>Z-Aura manages local zapret/Flowseal profiles, lists and files and can start the engine or install a Windows service. You are responsible for compliance with applicable law, ISP terms, network rules and third-party rights. Do not use it for unauthorized access, harm or interference with another person's network.</p>
 <p>The app is not a VPN, does not add encryption and does not guarantee anonymity, bypass of every restriction or uninterrupted access to third-party services.</p>
-<h2>3. Licenses</h2>
+<h2 id="section-3">3. Licenses</h2>
 <p>Original Z-Aura interface and integration code is distributed under the MIT license. Its permissions to use, modify and distribute remain in force; these terms do not restrict rights granted by that license.</p>
 <p>zapret, Flowseal, WinDivert, Cygwin, .NET/WPF, fonts and other third-party components retain their own licenses. Z-Aura's MIT license does not automatically apply to them. Redistribution must comply with applicable licenses, notices and source-code requirements. Publishing these terms does not confirm that all such requirements have been met.</p>
-<h2>4. System changes and security</h2>
+<h2 id="section-4">4. System changes and security</h2>
 <p>Starting the engine and configuring the service may require administrator privileges and change network packet processing. You select profiles and are responsible for applied settings. Back up important data first. Do not disable antivirus, Secure Boot or driver signature checks to run the app.</p>
 <p>The GUI-owned engine and installed service have different lifetimes: closing the GUI does not necessarily stop the service. Stop the appropriate processes and service normally before deleting files.</p>
-<h2>5. Discord and third-party services</h2>
+<h2 id="section-5">5. Discord and third-party services</h2>
 <p>Rich Presence is active while Z-Aura runs, without a separate app toggle. Your selected profile, GUI engine state and session time may be shown to other Discord users. Visibility is controlled in Discord. To stop sending Presence to a running Discord client, quit Z-Aura or Discord.</p>
 <p>Discord usage and external links are governed by the respective services' terms. Z-Aura is not a Discord product, does not claim verification and does not guarantee Discord feature availability.</p>
-<h2>6. No warranties and liability</h2>
+<h2 id="section-6">6. No warranties and liability</h2>
 <p>To the extent permitted by law, the app is provided “as is”, without warranties of fitness for a purpose, uninterrupted operation or absence of defects. Applicable license limitations of liability remain in effect. Nothing here excludes mandatory user rights or liability that cannot legally be limited.</p>
-<h2>7. Ending use</h2>
+<h2 id="section-7">7. Ending use</h2>
 <p>You may stop using the app by quitting its processes, stopping/removing its installed service and then deleting local files. Retention and deletion are described in the privacy policy.</p>
-<h2>8. Changes and contact</h2>
+<h2 id="section-8">8. Changes and contact</h2>
 <p>Documents must be updated with a new revision date when features change. This revision describes the current implementation, not a promise of a future service. For terms, licenses or app questions, use the contact below.</p>
 
+    </article>
+    <aside class="document-side">
+      <div class="contents-card">
+        <details class="contents" data-document-contents>
+          <summary>On this page<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <nav aria-label="On this page"><a href="#section-1">1. Scope</a>
+<a href="#section-2">2. Purpose and lawful use</a>
+<a href="#section-3">3. Licenses</a>
+<a href="#section-4">4. System changes and security</a>
+<a href="#section-5">5. Discord and third-party services</a>
+<a href="#section-6">6. No warranties and liability</a>
+<a href="#section-7">7. Ending use</a>
+<a href="#section-8">8. Changes and contact</a></nav>
+        </details>
+      </div>
+      <div class="contact-card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 6 9 7 9-7"/></svg>
+        <h2>Have a question?</h2>
+        <p>For app, terms or data inquiries, contact the responsible party.</p>
+        <a href="mailto:z-aura@internet.ru">z-aura@internet.ru</a>
+      </div>
+    </aside>
   </main>
-  <footer id="contact" class="wrap">
+  <footer id="contact" class="wrap site-footer">
+    <div class="footer-heading"><span>Z-Aura</span><span>Your flow. Your rules.</span></div>
     <p>Responsible for this app and site: Avgust / @dopebeanie (wannadie2day).<br>App and data inquiries: <a href="mailto:z-aura@internet.ru">z-aura@internet.ru</a>.</p>
     <p>Z-Aura is an independent project, not a Discord product. Publishing these documents does not imply Discord approval.</p>
     <p>News and changelog: <a href="https://t.me/zaurafork" rel="noreferrer">Telegram · @zaurafork</a>. For private data inquiries, use the responsible party's contact above, not the public channel.</p>

@@ -1,8 +1,8 @@
 {
-  "status": "draft-not-for-publication",
+  "status": "built-not-yet-deployed-or-discord-verified",
   "interactionsEndpointUrl": null,
   "linkedRolesVerificationUrl": null,
-  "termsOfServiceUrl": null,
-  "privacyPolicyUrl": null,
+  "termsOfServiceUrl": "https://dopebeanie.github.io/z-aura-confidentiality-policy/terms.html",
+  "privacyPolicyUrl": "https://dopebeanie.github.io/z-aura-confidentiality-policy/privacy.html",
   "note": "Interactions/Linked Roles are intentionally not implemented for the current Rich Presence-only app. Leave these fields blank. Legal URLs must be publicly deployed and checked before pasting into Discord."
 }
